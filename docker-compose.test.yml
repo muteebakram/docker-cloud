@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    build: ./src
+
+  sut:
+    build: ./test
+    depends_on:
+      - app
